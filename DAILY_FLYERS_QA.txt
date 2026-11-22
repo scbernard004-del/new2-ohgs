@@ -1,0 +1,33 @@
+OHGS v44 — DAILY FLYERS AND BATCHING PLANT
+21 November 2026 | Release v44-daily-flyers
+
+CONTENT AND FUNCTION
+- Both supplied OHGS artworks retained in full. Branding, contact details and actual equipment are preserved.
+- The feature appears on all 40 public pages; the deployment diagnostic remains unindexed.
+- Friday greeting uses Tanzania's calendar. Other days feature the plant. The plant's product page is available every day.
+- Standalone calendar checks cover 14 consecutive days, Thursday-to-Friday and Friday-to-Saturday midnight, the next Friday, invalid dates and the December/January year boundary.
+- A browser clock fixture verified the live Friday-to-Saturday change without reloading the page.
+- Browser product search returned the new plant for batching while the page was in Kiswahili.
+- Plant WhatsApp link contained the exact OHGS phone and a Kiswahili plant-specific enquiry when Kiswahili was selected. No message was sent.
+- Full-size plant image opened successfully at 1121 x 1403.
+- The diagnostic page reported v44-daily-flyers for the HTML, media controller and version file; all 10 new image/page/controller checks passed in the preview.
+
+DESIGN AND VISUAL CHECKS
+- Chrome responsive preview checked at 320 and 390 CSS-pixel frame widths, 768 tablet width and 1100 desktop frame width, plus the full desktop browser.
+- Checked English/Kiswahili and light/dark combinations on the Home feature, plant page and Offers, with additional checks on Contact and product search.
+- No horizontal overflow was observed at the tested sizes.
+- New body copy is at least 16 px; new labels use 14 px and contact/action targets are at least 44 px high.
+- Posters keep their original proportions and do not crop footer contact information. Mobile artwork stacks at a readable width; users can enlarge it.
+- The older Friday/Saturday artwork is no longer used in the Offers header outside the scheduled feature. Earlier holiday artwork is labelled as campaign archive content.
+- A final stylesheet cache key ensures the finished mobile layout is fetched.
+
+PACKAGE AND PERFORMANCE
+- Local-reference, title, translation, SEO, canonical, sitemap, ordering, accessibility-attribute and image checks passed for all public pages.
+- Responsive images use 480 / 768 / original-width WebP sources with JPEG fallback. The smallest new plant source is 64,164 bytes; the Friday source is 44,074 bytes.
+- The inactive Friday template does not request its image for the ordinary daily feature.
+- Existing showroom playback was observed running automatically, muted, at 8.3 seconds of a 40.7-second clip, without a media error.
+- All earlier media are preserved unchanged in the package.
+- npm run qa, npm run build, JavaScript syntax checks and ZIP integrity verification are the final package checks.
+
+LIMITS
+Responsive checks used Chrome, not every physical phone or browser. The calendar depends on an accurately set device clock. WhatsApp delivery, real customer enquiries and the live Vercel domain were not tested as part of the local preview. Vercel returned a team-access 403, so publishing requires team authorization or the user's normal GitHub/Vercel upload workflow. This package alone does not update the live domain.

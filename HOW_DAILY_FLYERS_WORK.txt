@@ -1,0 +1,29 @@
+OHGS DAILY ARTWORK — v44-daily-flyers
+
+FRIDAYS
+From 00:00 until the end of Friday in Tanzania, the new Friday greeting appears in Today at OHGS. It is a greeting; it does not introduce a discount, stock guarantee or new opening hours.
+
+OTHER DAYS
+The compact concrete batching plant is the main daily highlight. The Friday image stays inside an inactive template and is not downloaded for the daily feature on those days.
+
+TANZANIA CALENDAR
+The schedule uses Africa/Dar_es_Salaam (UTC+3 throughout the year), even when a visitor is in another country. It uses the visitor device's clock, so automatic date and time should be enabled on the device. No Vercel scheduled job or daily GitHub upload is needed.
+
+An open page checks at midnight and at least every minute for a clock change. It checks again when the tab becomes visible or the visitor returns using Back. No clock-related network request is needed. The calendar starts working after this package is deployed.
+
+WHERE TO FIND IT
+- Every public page has a Today at OHGS feature after its introduction.
+- Home includes a shortcut to the daily feature.
+- The batching plant has its own page, product-compact-concrete-batching-plant.html, a searchable Products listing, and a listing under Construction.
+- The plant remains available in those listings on Fridays.
+- The original two generator flyers and all earlier videos remain included.
+
+READABILITY AND IMAGES
+The original artwork is shown completely, without cropping the logo, contact number or equipment. Smaller WebP images are served to modern phones and larger sources to larger displays; JPEG is the compatibility fallback. Tap an image or Open full flyer to view the full-resolution JPEG. The plant page also offers a download.
+
+Plant details are normal selectable website text in English and Kiswahili. The features provided on the uploaded flyer are four square bins, quick installation and high structural strength. Capacity, electrical supply, dimensions, included equipment, installation arrangements, availability and price should be confirmed with OHGS; no unprovided numeric specifications were invented.
+
+When JavaScript is disabled, the evergreen plant content and JPEG-compatible images remain available. JavaScript is required for the live weekday selection and language controls.
+
+TO CHECK A DEPLOYMENT
+Open /version-check.txt and confirm v44-daily-flyers. Open /deploy-test and press Check deployed files. The release numbers must match and all 10 new flyer-related files must be available. This check catches missing images and HTML accidentally returned instead of an image.

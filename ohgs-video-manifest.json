@@ -1,0 +1,205 @@
+{
+  "release": "v46-video-recovery",
+  "videoFiles": 22,
+  "posterFiles": 11,
+  "assets": [
+    {
+      "path": "media/ohgs-build-with-us-mobile.mp4",
+      "kind": "video",
+      "bytes": 979174,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-build-with-us-poster.webp",
+      "kind": "poster",
+      "bytes": 37964,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-build-with-us.mp4",
+      "kind": "video",
+      "bytes": 2344059,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-nov26-arusha-showroom-mobile.mp4",
+      "kind": "video",
+      "bytes": 2653781,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-nov26-arusha-showroom-poster.webp",
+      "kind": "poster",
+      "bytes": 49868,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-nov26-arusha-showroom.mp4",
+      "kind": "video",
+      "bytes": 5406595,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-building-boards-mobile.mp4",
+      "kind": "video",
+      "bytes": 1183282,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-building-boards-poster.webp",
+      "kind": "poster",
+      "bytes": 22944,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-building-boards.mp4",
+      "kind": "video",
+      "bytes": 1183282,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-edon-ad21a-drill-demo-mobile.mp4",
+      "kind": "video",
+      "bytes": 188033,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-edon-ad21a-drill-demo-poster.webp",
+      "kind": "poster",
+      "bytes": 16096,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-edon-ad21a-drill-demo.mp4",
+      "kind": "video",
+      "bytes": 393377,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-full-shop-tour-mobile.mp4",
+      "kind": "video",
+      "bytes": 3296408,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-full-shop-tour-poster.webp",
+      "kind": "poster",
+      "bytes": 28662,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-full-shop-tour.mp4",
+      "kind": "video",
+      "bytes": 3296408,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-safety-wear-showcase-mobile.mp4",
+      "kind": "video",
+      "bytes": 2753357,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-safety-wear-showcase-poster.webp",
+      "kind": "poster",
+      "bytes": 12360,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-safety-wear-showcase.mp4",
+      "kind": "video",
+      "bytes": 2753357,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-showroom-walkthrough-mobile.mp4",
+      "kind": "video",
+      "bytes": 786111,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-showroom-walkthrough-poster.webp",
+      "kind": "poster",
+      "bytes": 39924,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-showroom-walkthrough.mp4",
+      "kind": "video",
+      "bytes": 786111,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-staff-showroom-tour-mobile.mp4",
+      "kind": "video",
+      "bytes": 2607463,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-staff-showroom-tour-poster.webp",
+      "kind": "poster",
+      "bytes": 48206,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-staff-showroom-tour.mp4",
+      "kind": "video",
+      "bytes": 2874013,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-storefront-preview-mobile.mp4",
+      "kind": "video",
+      "bytes": 72524,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-storefront-preview-poster.webp",
+      "kind": "poster",
+      "bytes": 32594,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-storefront-preview.mp4",
+      "kind": "video",
+      "bytes": 77843,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-team-message-mobile.mp4",
+      "kind": "video",
+      "bytes": 254845,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-team-message-poster.webp",
+      "kind": "poster",
+      "bytes": 39688,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-team-message.mp4",
+      "kind": "video",
+      "bytes": 254845,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-tool-cabinet-mobile.mp4",
+      "kind": "video",
+      "bytes": 343960,
+      "type": "video/mp4"
+    },
+    {
+      "path": "media/ohgs-v19-tool-cabinet-poster.webp",
+      "kind": "poster",
+      "bytes": 52594,
+      "type": "image/webp"
+    },
+    {
+      "path": "media/ohgs-v19-tool-cabinet.mp4",
+      "kind": "video",
+      "bytes": 407639,
+      "type": "video/mp4"
+    }
+  ]
+}

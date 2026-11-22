@@ -1,0 +1,26 @@
+OHGS WEBSITE — NEW VERCEL PROJECT AND DOMAIN
+
+1. First upload this package to the ROOT of the correct GitHub repository.
+2. In Vercel choose Add New > Project, then import that GitHub repository.
+3. Select the production branch that contains the upload (normally main).
+4. Set Framework Preset to Other.
+5. Set Root Directory to ./ (the repository root).
+6. Set Build Command to: npm run build
+   Set Output Directory to: dist
+   These settings are also included in vercel.json so Vercel publishes the checked website files, not an older build.
+7. Deploy without a previous build cache. Open /version-check.txt and confirm it says v46-video-recovery.
+8. First confirm the NEW project's temporary .vercel.app address is Ready and working.
+9. In Vercel open Domains, use the menu beside your custom domain, choose Move, and select the new project. If Move is unavailable, remove the domain from the old project and immediately add it under the new project's Settings > Domains.
+10. At your domain provider, enter exactly the DNS records Vercel displays. Do not guess the records. If the domain already points to Vercel, DNS may not need to change.
+11. In Vercel Settings > Git, confirm the Production Branch is the branch you uploaded.
+12. Add the contact-email values under Settings > Environment Variables. Keep SMTP_PASS private and never upload it to GitHub.
+
+LIVE VERSION CHECK
+Your deployed-domain/version-check.txt must show:
+OHGS RELEASE v46-video-recovery
+
+After deployment, follow GOOGLE_SEARCH_SETUP.txt to verify the domain and submit the sitemap to Google.
+
+Use a lowercase Vercel project name, for example ohgs-hardware-new. On the finished deployment, /deploy-test must also report all 10 new flyer files available.
+
+V46 VIDEO REPAIR: Read VIDEO_REPAIR_README.txt. Upload the actual 22 MP4 files and 11 posters included in the repair media folder. After deploying, /deploy-test must show Videos and posters: 33 / 33 available. The build now rejects missing video files instead of publishing broken players.

@@ -1,0 +1,34 @@
+OHGS v46 — VIDEO FILE RESTORATION AND AUTOPLAY RECOVERY
+22 November 2026
+
+The deployed showroom video at new-ohgs.vercel.app returned 404 (file not found). This package contains the real MP4 files and preview images, not just player code. It preserves the inline OHGS logos, product pages, daily flyers, English/Kiswahili and saved light/dark theme.
+
+UPDATING YOUR EXISTING WEBSITE
+Read VIDEO_REPAIR_README.txt. Use the existing Vercel project and its connected GitHub repository; you do not need to create another project or move the domain for this repair.
+
+1. In Vercel open the project for new-ohgs.vercel.app, then Settings > Git. Follow its connected repository link.
+2. Extract the ZIP before uploading. Keep index.html, package.json, build-static.mjs and verify-video-media.mjs at the repository root, with the media folder beside them.
+3. Copy all extracted files into the existing repository, preserving folder paths and existing media. Commit and push. If using the small repair ZIP, merge its included media folder into the existing media folder; keep the other media files.
+4. Vercel settings: Framework Preset Other; Root Directory ./; Build Command npm run build; Output Directory dist.
+5. Wait until the new production deployment is Ready. If using Redeploy, disable Use existing Build Cache.
+6. Open /version-check.txt on the website. It must show v46-video-recovery.
+7. Open /deploy-test, press Check deployed files, and confirm all three releases match, Videos and posters shows 33 / 33 available, and New flyer files shows 10 / 10 available.
+8. Open Home. The visible video should start muted and repeat automatically. Tap Sound on to listen. Scroll to another video; only one automatic preview plays at a time.
+
+Do not upload the ZIP itself, an extra containing folder, node_modules or dist. With GitHub's website, upload batches of no more than 100 files. The complete package has more than 100 files; GitHub Desktop is easier for a full upload.
+
+If Vercel reports "OHGS media upload is incomplete", upload the exact missing files listed in that error, then commit and deploy again. This check prevents an incomplete media upload from silently publishing broken players.
+
+HOW PLAYBACK WORKS
+- Automatic previews are muted, play inline, repeat and use the smaller video version first.
+- A failed smaller version automatically tries the full version; a failed full version can try the smaller version.
+- Videos pause outside the viewing area. Existing buffered video is retained when returning.
+- Device Data Saver, reduced motion or browser autoplay restrictions can require a tap on Play.
+- Videos load near the viewing area instead of all downloading at once.
+
+The Friday greeting still appears on Fridays in Tanzania (UTC+3), and the batching plant flyer is featured on other days. All earlier product and order features remain included.
+
+Read VIDEO_RECOVERY_QA.txt for this release's checks. Earlier QA documents describe earlier releases. For a genuinely new project, use DEPLOY_TO_NEW_VERCEL.txt; use a lowercase project name, such as ohgs-hardware-new.
+
+LOCAL PREVIEW
+Open a terminal in the extracted project folder. Run npm ci, then npm run dev. Open the printed Local URL. Run npm run qa and npm run build to check the upload files.

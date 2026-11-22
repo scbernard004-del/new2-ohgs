@@ -1,0 +1,16 @@
+{
+  "name": "ohgs-static-website",
+  "version": "46.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "node build-static.mjs",
+    "qa": "node verify-video-media.mjs && node qa-check.mjs && node qa-daily-flyers.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.14"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

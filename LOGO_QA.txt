@@ -1,0 +1,28 @@
+OHGS v45 — LOGO DISPLAY VERIFICATION
+22 November 2026 | Release v45-inline-logo
+
+The supplied screenshot shows a broken header image. The prior package loaded that badge from a separate SVG file. Without the exact deployment address, the HTTP cause of that failed image request cannot be confirmed.
+
+DISPLAY FIX
+- Header, footer and product-card badge artwork is embedded in the HTML as SVG.
+- 107 logo placements across all 41 HTML files are self-contained. Every public page and the deployment diagnostic has the corrected header.
+- No displayed badge needs media/ohgs-header-pro-badge.svg, a remote picture, an external font download, JavaScript, SVG filters or duplicate SVG element IDs.
+- The previous standalone SVG remains in media for metadata compatibility.
+- Existing light/dark wordmark colours, responsive logo dimensions and header scroll animation are preserved.
+
+CHECKS COMPLETED
+- Full npm run qa and npm run build passed.
+- All inline logo markup parsed as valid SVG/XML and contained no external href/src references.
+- Chrome responsive preview at frame widths 320 and 390: logo artwork displayed, with readable wordmark in light and dark modes. English and Kiswahili header controls remained usable.
+- Home and Products checked; Products contained the updated card badges and footer badge.
+- Scrolling to the footer activated the compact header and kept both header and footer logos visible.
+- Desktop frame width 1100: logo displayed at 38 x 38 CSS pixels and no horizontal overflow was observed. Footer logo measured 42 x 42.
+- All existing photos, flyers and videos are preserved byte-for-byte in the complete archive.
+- ZIP integrity and applying the small patch to the prior complete package are checked during packaging.
+
+DELIVERY
+OHGS_V45_LOGO_FIX.zip is a small overlay for an existing v44 installation. It contains the changed code/configuration and instructions. It must be extracted into that existing repository; it is not a standalone new website.
+
+OHGS_GITHUB_UPLOAD_READY.zip is the complete updated website for an existing or new repository.
+
+No physical phone Safari test or live Vercel deployment verification was performed. The production site still needs the updated files committed to its connected GitHub repository and successfully redeployed.

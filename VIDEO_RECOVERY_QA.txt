@@ -1,0 +1,37 @@
+OHGS v46-video-recovery — VERIFICATION RECORD
+22 November 2026, Africa/Dar_es_Salaam
+
+LIVE DIAGNOSIS
+- Opened https://new-ohgs.vercel.app/ in the connected browser. Its release marker was v45-inline-logo.
+- Reproduced the Home showroom player's load error and opened its direct MP4 link.
+- The exact deployed showroom MP4 returned Vercel 404 NOT_FOUND. Other live MP4 URLs were not individually checked. The live site was not changed during diagnosis.
+
+MEDIA CHECKS
+- 22 MP4 variant filenames and 11 WebP posters were present in the source package.
+- The MP4 variants represent 17 unique byte contents. All 17 unique MP4 files decoded fully in FFmpeg with exit status 0 and no decode errors.
+- Media metadata showed H.264, yuv420p and AAC LC; the moov metadata precedes mdat for streaming. The main showroom video duration is 40.7 seconds.
+- The original media bytes were preserved; no additional compression or video regeneration was performed in this repair.
+- The build validator accepted real fixture media and rejected a deleted MP4 and a Git LFS text pointer, naming the affected file.
+
+BROWSER CHECKS ON THE LOCAL PREVIEW
+- Home video played automatically without pressing Play, muted and looping. Readiness was 4, duration 40.7 seconds, and the playhead advanced on repeated observations.
+- Home also played in a 390-pixel responsive frame. At frame widths 320 and 390, page content had no horizontal overflow (layout viewport widths 305 and 375 after scrollbars).
+- Simulated missing mobile MP4: playback automatically recovered to the full MP4, muted and playing with an advancing playhead.
+- Simulated missing full MP4 in desktop manual playback: playback recovered to the mobile MP4 and continued with sound enabled.
+- Simulated both variants missing: the player showed a concise Kiswahili error, stopped retrying and allowed the next visible valid video to play automatically.
+- Gallery started the first visible clip automatically after scrolling, with real video frames displayed.
+- Visual checks covered Home in desktop and narrow layouts and the desktop Gallery. Text, inline OHGS branding, video frames and action buttons were visible in the inspected light-theme/Kiswahili state. This was not a new visual audit of every page or a physical iPhone/Android test.
+- The deployment check in the browser returned all 33 video/poster paths available: MP4 requests returned 206 with valid MP4 headers; posters returned 200. All 10 flyer checks also passed.
+- The playback observer excludes 72 pixels at each viewport edge so videos hidden behind the sticky header or mobile order bar yield to visible clips.
+
+AUTOMATED REGRESSION CHECKS
+- JavaScript syntax checks for the changed player, deployment check and media validator.
+- npm run qa: 41 HTML pages (40 public), internal assets/links, bilingual content and release markers.
+- Daily flyer schedule checks: 14 days, Tanzania midnight transition and year rollover.
+- npm run build: complete static output with the generated video manifest.
+- Archive checks: all original media preserved, repair media matches the complete video manifest, and no node_modules, dist, test harness, credentials or upload-helper files included.
+
+LIMITS AND LIVE FOLLOW-UP
+This record describes source validation and the local browser preview. The live deployment still needs the repair uploaded to its connected GitHub repository and deployed. After Vercel reports Ready, check /version-check.txt and /deploy-test on the live project, then test Home and Gallery.
+
+Autoplay remains muted and respects explicit Data Saver and reduced-motion preferences. Browser/device restrictions can still require the visitor to press Play. Only one automatic preview plays at a time. A one-second storefront clip in Gallery is intentionally short and labelled as such; the 41-second showroom clip is the main Home video.

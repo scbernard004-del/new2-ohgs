@@ -1,0 +1,21 @@
+EARLIER GENERATOR VERIFICATION — RETAINED IN OHGS v44
+15 November 2026 | Release: v44-daily-flyers
+
+What customers see
+- The Home hero has a Compare generators link. The two product cards are immediately after the showroom video section.
+- Both models are searchable in Products and are shown on the Workshop Equipment and Vackson generator pages.
+- Offers and the individual generator pages have tap-to-enlarge flyers and full-size downloads. Flyer images are under media/flyers.
+- New layouts use the OHGS logo, Uhuru Road in Arusha, and +255 689 528 193 for calls and WhatsApp. Device photos retain the real Pioneer and Eagle markings. Previous seller details, WhatsApp status framing and the dated outage promotion were removed.
+- Prices and availability are requested from OHGS. The website gives both models' specifications in English and Kiswahili as text.
+
+Source details
+- Pioneer PI2800E2: supplied flyer states 2.5 kVA rated, 2.8 kVA maximum, 220 V single-phase, 50 Hz, 196 cc air-cooled 4-stroke OHV petrol engine, approximately 15 L tank, electric start and AVR. The 8–10 hour estimate is at 50% load.
+- The Pioneer flyer states 2,500 W rated and 2,800 W maximum. A supplier listing for this model states 2,200 W rated and 2,500 W maximum. The page distinguishes the sources and asks buyers to confirm the actual unit's label and contents. Reference: https://www.goldentools.ae/item/pioneer-gasoline-generator-pi2800e2-15-l-chifirfs-s002a
+- Eagle EGX1205: the photo shows the model and handle. Supplier catalog lists 850 VA output, 4.2 L tank, OHV petrol engine, pull start and 24 kg dry weight. Confirm voltage, continuous rating and socket type on the actual unit. Reference: https://www.robinme.ae/en/products/view/egx-1205.html
+
+Verification
+- Static QA and production build passed: 40 HTML pages, including 39 public pages, 261 image placements and 25 video placements.
+- Chrome checked mobile layouts at 320 px and 390 px and the desktop flyer grid. Images rendered, neither mobile page overflowed horizontally, and the specs remained readable in Kiswahili and light mode. The new cards also rendered in dark mode.
+- Searching PI2800E2 and EGX1205 returned the exact models. Verified product-specific WhatsApp enquiry text and both full-size downloads without sending messages.
+- The existing 41-second Home showroom video started muted in the mobile check. Earlier product pages and assets were retained.
+- Vercel team access did not allow publishing from this session. To deploy, follow START_HERE.txt and confirm v44-daily-flyers in /version-check.txt on your own domain.
